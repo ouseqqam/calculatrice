@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex direct flex-col justify-center items-center h-screen">
+        <div class="h-96 w-80 rounded-lg bg-black">
+            <div id ="screen" class="bg-black h-1/4 text-white" >
+            </div>
+            <div class="grid grid-cols-4 gap-3 bg-gray-800 text-white">
+                <button id="ac" onclick="getId(id)" class="border-solid bg-red-800">AC</button>
+            </div>
+            <div class="grid grid-cols-4 gap-3 bg-gray-800 h-3/4 text-white" >
+                <button id="7" onclick="getId(id)" class="border-solid bg-gray-900">7</button>
+                <button id="8" onclick="getId(id)" class="border-solid bg-gray-900" >8</button>
+                <button id="9" onclick="getId(id)" class="border-solid bg-gray-900" >9</button>
+                <button id="+" onclick="getId(id)" class="border-solid bg-gray-900" >+</button>
+                <button id="4" onclick="getId(id)" class="border-solid bg-gray-900" >4</button>
+                <button id="5" onclick="getId(id)" class="border-solid bg-gray-900" >5</button>
+                <button id="6" onclick="getId(id)" class="border-solid bg-gray-900" >6</button>
+                <button id="-" onclick="getId(id)" class="border-solid bg-gray-900" >-</button>
+    
+                <button id="1" onclick="getId(id)" class="border-solid bg-gray-900" >1</button>
+                <button id="2" onclick="getId(id)" class="border-solid bg-gray-900" >2</button>
+                <button id="3" onclick="getId(id)" class="border-solid bg-gray-900" >3</button>
+                <button id="*" onclick="getId(id)" class="border-solid bg-gray-900" >*</button>
+                <button id="3" onclick="getId(id)" class="border-solid bg-gray-900" >0</button>
+                <button id="." onclick="getId(id)" class="border-solid bg-gray-900" >.</button>
+                <button id="=" onclick="getId(id)" class="border-solid bg-gray-900" >=</button>
+                <button id="/" onclick="getId(id)" class="border-solid bg-gray-900" >/</button>
+    
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
