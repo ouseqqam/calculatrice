@@ -3,6 +3,8 @@ let num = ''
 
 let cal = []
 
+let i = 0
+
 function getId(id) {
 
     const screen = document.getElementById('screen')
@@ -13,6 +15,11 @@ function getId(id) {
         screen.innerHTML = txt
     }
     else if (id >= '0' && id <= '9') {
+        if (i == 1) {
+            cal = []
+            i = 0
+            txt = ''
+        }
         num += id
         txt += id
         screen.innerHTML = txt
@@ -25,9 +32,12 @@ function getId(id) {
             num = ''
             screen.innerHTML = txt
         }
+
         else {
             cal.push(num)
+
             let sum = Number(cal[0])
+
             for (let i = 1; i < cal.length; i++) {
                 if (cal[i] === '+')
                     sum += Number(cal[i + 1])
@@ -41,6 +51,12 @@ function getId(id) {
             screen.innerHTML = sum
             num = ''
             txt = sum
+            if (sum == 0) {
+                cal = []
+                i = 0
+            }
+            i = 1
+            
         }
     }
 }
